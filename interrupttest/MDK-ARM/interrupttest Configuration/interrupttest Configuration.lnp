@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"interrupttest configuration\main.o"
+"interrupttest configuration\stm32l1xx_hal_msp.o"
+"interrupttest configuration\stm32l1xx_it.o"
+"interrupttest configuration\system_stm32l1xx.o"
+"interrupttest configuration\stm32l1xx_hal_flash.o"
+"interrupttest configuration\stm32l1xx_hal_pwr_ex.o"
+"interrupttest configuration\stm32l1xx_hal_flash_ramfunc.o"
+"interrupttest configuration\stm32l1xx_hal_gpio.o"
+"interrupttest configuration\stm32l1xx_hal_rcc_ex.o"
+"interrupttest configuration\stm32l1xx_hal_cortex.o"
+"interrupttest configuration\stm32l1xx_hal_dma.o"
+"interrupttest configuration\stm32l1xx_hal_flash_ex.o"
+"interrupttest configuration\stm32l1xx_hal_rcc.o"
+"interrupttest configuration\stm32l1xx_hal_pwr.o"
+"interrupttest configuration\stm32l1xx_hal.o"
+"interrupttest configuration\stm32l1xx_hal_tim.o"
+"interrupttest configuration\stm32l1xx_hal_tim_ex.o"
+"interrupttest configuration\startup_stm32l152xb.o"
+--library_type=microlib --strict --scatter "interrupttest Configuration\interrupttest Configuration.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "interrupttest Configuration.map" -o "interrupttest Configuration\interrupttest Configuration.axf"
